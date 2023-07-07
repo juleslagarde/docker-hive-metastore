@@ -25,3 +25,4 @@ jobs:
         image: docker-hive:latest
         config: test_config.yaml
     
+
