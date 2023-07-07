@@ -1,6 +1,6 @@
-# Hive Meatastore
+# Hive Metastore
 
-![Hive Metastore Build](https://github.com/IBM/docker-hive/actions/workflows/docker-image.yml/badge.svg)
+![Hive Metastore Build](https://github.com/juleslagarde/docker-hive-metastore/actions/workflows/docker-image.yml/badge.svg)
 
 ## Build
 
