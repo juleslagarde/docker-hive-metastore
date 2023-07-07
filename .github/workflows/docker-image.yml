@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
+        name: List files in workspace
+        run: ls -l; pwd
+      -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       -
@@ -31,6 +34,9 @@ jobs:
           push: false
           load: true
           tags: juleslagarde/hive-metastore:latest
+      -
+        name: List files in workspace
+        run: ls -l; pwd
       -
         name: run structure tests
         uses: brpaz/structure-tests-action@v1.1.2
