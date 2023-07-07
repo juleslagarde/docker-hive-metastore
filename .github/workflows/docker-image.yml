@@ -33,7 +33,7 @@ jobs:
           tags: juleslagarde/hive-metastore:latest
       -
         name: run structure tests
-        uses: brpaz/structure-tests-action@v1.2.0
+        uses: brpaz/structure-tests-action@v1.1.2
         with:
           image: juleslagarde/hive-metastore:latest
           configFile: test_config.yaml
