@@ -28,7 +28,7 @@ jobs:
         name: Build docker image
         uses: docker/build-push-action@v4
         with:
-          push: true
+          push: false
           load: true
           tags: juleslagarde/hive-metastore:latest
       -
