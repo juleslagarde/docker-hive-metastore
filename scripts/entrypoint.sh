@@ -16,4 +16,4 @@ else
 fi
 set -e
 
-start-metastore
+hive --service metastore -p 9083
