@@ -32,7 +32,7 @@ jobs:
           tags: juleslagarde/hive-metastore:latest
       -
         name: run structure tests
-        uses: plexsystems/container-structure-test-action@v0.1.0
+        uses: brpaz/structure-tests-action@v1
         with:
-          image: docker-hive:latest
-          config: test_config.yaml
+          image: juleslagarde/hive-metastore:latest
+          configFile: test_config.yaml
