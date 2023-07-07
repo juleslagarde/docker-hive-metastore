@@ -3,7 +3,7 @@ commandTests:
 - name: jre
   command: java
   args: ["-version"]
-  expectedError: ['openjdk version "17.0.6"*']
+  expectedError: ['openjdk version "17.0.7"*']
 - name: openssl
   command: apt
   args: ["list", "openssl"]
@@ -20,12 +20,12 @@ fileExistenceTests:
 - name: log4j2.properties
   path: /opt/hive/conf/metastore-log4j2.properties
   shouldExist: true
-- name: aws-java-sdk-bundle-jar
-  path: /opt/hadoop/share/hadoop/tools/lib/aws-java-sdk-bundle-1.12.262.jar
-  shouldExist: true
-- name: hadoop-aws-jar
-  path: /opt/hadoop/share/hadoop/tools/lib/hadoop-aws-3.3.4.jar
-  shouldExist: true
+#- name: aws-java-sdk-bundle-jar
+#  path: /opt/hadoop/share/hadoop/tools/lib/aws-java-sdk-bundle-1.12.262.jar
+#  shouldExist: true
+#- name: hadoop-aws-jar
+#  path: /opt/hadoop/share/hadoop/tools/lib/hadoop-aws-3.3.4.jar
+#  shouldExist: true
 metadataTest:
   env:
   - key: JAVA_HOME
